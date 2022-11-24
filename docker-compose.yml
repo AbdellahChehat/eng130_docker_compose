@@ -1,0 +1,22 @@
+version: "3.9"
+volumes:
+  db:
+services:
+  db:
+    container_name: db
+    image: mongo:4.0.4
+    ports:
+      - "27017:27017"
+    volumes:
+      - ./db/mongod.conf:/etc/mongod.conf
+
+  app:
+    container_name: app
+    build: ./app
+    restart: always
+    ports:
+      - "3000:3000"
+    environment:
+      - DB_HOST=mongodb://172.18.0.2:27017/posts
+    depends_on:
+      - db
