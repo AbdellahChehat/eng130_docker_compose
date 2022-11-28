@@ -31,6 +31,7 @@ CMD ["node", "app.js"]
 
 **Docker File Structure**
 
+<img width="442" alt="Screenshot 2022-11-22 at 16 59 22" src="https://user-images.githubusercontent.com/115224560/204245052-29207a5b-51aa-4ab6-a968-b14036f184fe.png">
 
 
 
