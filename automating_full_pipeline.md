@@ -51,6 +51,25 @@
     - Select the Projects to build
     - Trigger only if build is stable
 
+### Job 2: Merge into Main branch 
+
+- Discard old builds
+    - Max # of build : 3
+- Git
+    - Repository URL
+    - Credentials
+    - Branches Specifer: */dev
+    - Branches Specifer: */main
+- Additional Behaviours: Merge before build
+    - Name of repo: origin
+    - Branch to merge to main
+- Post-build Actions
+    - Git Publisher
+    - Push Only if Build Successeds
+    - Merge Results
+
+### Job 3: Build Docker Image
+
 
 
 

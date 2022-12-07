@@ -39,8 +39,6 @@ RUN npm install -g npm@7.20.6
 
 COPY --from=app /usr/src/app /usr/src/app
 
-ENTRYPOINT [ "seed-database.sh" ]
-
 EXPOSE 3000
 
 CMD ["node", "app.js"]

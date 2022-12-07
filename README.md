@@ -41,3 +41,15 @@ To the Dockerfile add the following script:
 17. Run the image from DockerHub
 18. docker run -d -p 80:3000 abdullah12321/eng130_abdellah:latest
 19. If you now go to "localhost" in your browser, you should see your app
+
+
+----------
+
+### Docker Image 
+
+How to build a docker Image. 
+
+1. Create a Dockerfile
+2. Now that you have created a Dockerfile, it’s time to build your image using the docker build command. run 
+   `docker build -t dockerhubusername/docker image name: tag `
+3. TEST YOUR IMAGE run `
